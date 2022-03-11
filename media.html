@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de média</title>
+    <link rel="stylesheet" href="media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="./media.js"></script>
+    <div class="container">
+
+        <div class="header">
+            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" 
+            class="page-logo" alt="">
+    
+            <h1 class="title">
+                Calculadora de média
+            </h1>
+    
+            <p class="description">
+                Descubra a média de sua nota no ano!
+            </p>
+        </div>
+    
+        <div class="main">
+           <p class="main-description">
+            Preencha os campos abaixo com suas notas
+           </p>
+
+           <div class="notes">
+               <label for="notaPrimeiroBimestre"></label>  
+               <input class="nota" type="number" placeholder="1º Bimestre" id="nota1"> 
+        
+               <label for="notaSegundoBimestre"></label>  
+               <input class="nota" type="number" placeholder="2º Bimestre" id="nota2"> 
+        
+               <label for="notaTerceiroBimestre"></label>  
+               <input class="nota" type="number" placeholder="3º Bimestre" id="nota3"> 
+        
+               <label for="notaQuartoBimestre"></label>  
+               <input class="nota" type="number" placeholder="4º Bimestre" id="nota4"> 
+           </div>
+    
+        </div>
+    
+        <div class="calculator">
+            <button  class="button" onclick="Calcular()"  type="submit"> 
+                Calcular
+            </button>
+        </div>
+    
+        <div class="result">
+            <p class="result-description">
+                A média de suas notas foi: <span id="resultado" ></span>
+            </p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
